@@ -1,0 +1,16 @@
+{
+    "name": "@local-n8n/cli",
+    "version": "0.1.0",
+    "bin": {
+        "local-n8n": "./dist/index.js"
+    },
+    "scripts": {
+        "build": "tsc -b",
+        "start": "node dist/index.js",
+        "dev": "tsc -b -w"
+    },
+    "dependencies": {
+        "@local-n8n/core": "*",
+        "commander": "^11.1.0"
+    }
+}

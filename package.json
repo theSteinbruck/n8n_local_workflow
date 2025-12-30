@@ -1,0 +1,24 @@
+{
+    "name": "local-n8n-replica",
+    "private": true,
+    "workspaces": [
+        "packages/*"
+    ],
+    "scripts": {
+        "build": "npm run build --workspaces",
+        "dev": "npm run dev --workspaces",
+        "test": "npm run test --workspaces",
+        "lint": "npm run lint --workspaces"
+    },
+    "devDependencies": {
+        "@types/node": "^20.11.0",
+        "eslint": "^8.56.0",
+        "prettier": "^3.2.4",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.3.3"
+    },
+    "dependencies": {
+        "reactflow": "^11.11.4",
+        "socket.io-client": "^4.8.1"
+    }
+}

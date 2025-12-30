@@ -1,0 +1,23 @@
+{
+  "name": "@local-n8n/database",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -b",
+    "dev": "tsc -b -w",
+    "generate": "drizzle-kit generate",
+    "migrate": "npx ts-node src/migrate.ts",
+    "studio": "drizzle-kit studio"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/node": "^20.11.0",
+    "drizzle-kit": "^0.28.1",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "better-sqlite3": "^12.5.0",
+    "drizzle-orm": "^0.45.1"
+  }
+}
